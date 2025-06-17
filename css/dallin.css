@@ -1,0 +1,61 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+body {
+  font-family: "Poppins";
+  height: 100vh;
+  width: 100vw;
+  background-color: rgb(0, 0, 0);
+  overflow: hidden;
+}
+
+header {
+  height: 10%;
+  width: 100%;
+}
+
+header .title {
+  height: 70%;
+  width: 70%;
+  margin: 1rem;
+}
+
+main {
+  height: 90%;
+  width: 100%;
+}
+
+main .container {
+  margin: 1rem;
+}
+
+main .container .container2 {
+  display: flex;
+}
+
+main .container .container2 div {
+  margin-right: 3rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+main .container .container2 .imageprofil {
+  width: 300px;
+  height: 300px;
+  background-color: red;
+}
+
+main .container .container2 .imagemap {
+  width: 300px;
+  height: 300px;
+  background-color: red;
+}
