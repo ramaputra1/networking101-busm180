@@ -58,3 +58,11 @@ main .content .people .container {
   display: flex;
   justify-content: space-around;
 }
+
+main .content .people .container .people1 {
+  font-size: small;
+}
+
+main .content .people .container .people2 {
+  font-size: small;
+}
