@@ -14,7 +14,7 @@ body {
   height: 100vh;
   width: 100vw;
   background-color: rgb(255, 255, 255);
-  overflow: hidden;
+
   background-image: url(images/earth.jpg);
 }
 
@@ -28,7 +28,7 @@ header {
 
 header .title {
   height: 70%;
-  width: 70%;
+  width: 100%;
 
   margin: 1rem;
 }
@@ -63,6 +63,94 @@ main .content .people .container .people1 {
   font-size: small;
 }
 
+main .content .people .container .people1 a {
+  color: lightblue;
+}
+
+main .content .people .container .people1 a:hover {
+  color: rgb(5, 154, 203);
+}
+
 main .content .people .container .people2 {
   font-size: small;
+}
+
+main .content .people .container .people2 a {
+  color: lightblue;
+}
+
+main .content .people .container .people2 a:hover {
+  color: rgb(5, 154, 203);
+}
+
+/*Responsive*/
+/* RESPONSIVE STYLES */
+@media (max-width: 1024px) {
+  main .content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  main .content .people .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  main .content .people .container .people1,
+  main .content .people .container .people2 {
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 1rem;
+  }
+
+  main .content .people {
+    padding: 1rem 2rem;
+  }
+
+  header .title {
+    width: 90%;
+    margin: 1rem auto;
+  }
+}
+
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 1.8rem;
+  }
+
+  header h2 {
+    font-size: 1.2rem;
+  }
+
+  header p {
+    font-size: 0.9rem;
+  }
+
+  main .content .people .container .people1,
+  main .content .people .container .people2 {
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 1.4rem;
+  }
+
+  header h2 {
+    font-size: 1rem;
+  }
+
+  header p {
+    font-size: 0.8rem;
+  }
+
+  main .content .people .container .people1,
+  main .content .people .container .people2 {
+    font-size: 0.8rem;
+  }
+
+  main .content .people {
+    padding: 1rem;
+  }
 }
